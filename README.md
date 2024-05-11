@@ -4,12 +4,14 @@ This NodeJS package Converts Unicode text to Base64 string and viceversa.
 
 The package is entirely based in The "Unicode Problem" solution as described into Mozilla Developers web (See [References](#references)).
 
+
 ## Use Cases
 
 You may want to use `unib64` to:
 
 - Encode Unicode text to be transmitted among systems not supporting such charsets.
 - Encode Unicode text to further be set within an environment variable.
+
 
 ## Installation
 
@@ -66,13 +68,15 @@ import { decode } from 'unib64'
 console.log(decode("YSDEgCDwkICAIOaWhyDwn6aE")) // a Ā 𐀀 文 🦄
 ```
 
+
 ## Tests
 
-Open a terminal within `app` subdirectory and run the following command:
+Open a terminal within into this repository root directory and run the following command:
 
 ```bash
 npm test
 ```
+
 
 ## References
 
