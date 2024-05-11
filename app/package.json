@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/rafacalvo/unib64/issues"
   },
-  "homepage": "https://github.com/rafacalvo/unib64#readme"
+  "homepage": "https://github.com/rafacalvo/unib64#readme",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
 }
