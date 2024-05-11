@@ -3,23 +3,49 @@
 
 import assert from 'assert'
 
-import { encode } from '../index.js';
+import { encode, decode } from '../index.js';
 
-describe('encode', () => {
-    it('should encode unicode text', () => {
-        const expected = "YSDEgCDwkICAIOaWhyDwn6aE";
+describe('index', () => {
 
-        const encoded = encode("a Ā 𐀀 文 🦄");
+    describe('encode(unicodeText)', () => {
 
-        assert.equal(expected, encoded);
+        it('should encode unicode text', () => {
+            const expected = "YSDEgCDwkICAIOaWhyDwn6aE";
+
+            const encoded = encode("a Ā 𐀀 文 🦄");
+
+            assert.equal(expected, encoded);
+        });
+
+        it('should encode undefined unicode text', () => {
+            const expected = ""
+
+            const encoded = encode(undefined)
+
+            assert.equal(expected, encoded);
+        });
+
     });
 
-    it('should encode undefined unicode text', () => {
-        const expected = ""
+    describe('decode(base64String)', () => {
 
-        const encoded = encode(undefined)
-        
-        assert.equal(expected, encoded);
+        it('should decode base64 string', () => {
+            const expected = "a Ā 𐀀 文 🦄"
+
+            const decoded = decode("YSDEgCDwkICAIOaWhyDwn6aE")
+
+            assert.equal(expected, decoded);
+        });
+
+        it('should decode undefined base64 string', () => {
+            const expected = ""
+    
+            const decoded = decode(undefined)
+            
+            assert.equal(expected, decoded);
+        });
+    
     });
+
 
 });

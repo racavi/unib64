@@ -17,8 +17,8 @@ const encode = (unicodeText) => {
     return bytesToBase64(new TextEncoder().encode(unicodeText));
 }
 
-// Usage
-encode("a Ā 𐀀 文 🦄") // "YSDEgCDwkICAIOaWhyDwn6aE"
-new TextDecoder().decode(base64ToBytes("YSDEgCDwkICAIOaWhyDwn6aE")); // "a Ā 𐀀 文 🦄"
+const decode = (base64String = "") => {
+    return new TextDecoder().decode(base64ToBytes(base64String));
+}
 
-export {encode}
+export { encode, decode }
