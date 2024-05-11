@@ -12,6 +12,13 @@ This package is entirely based The "Unicode Problem" solution as depicted into M
 
 ## Usage
 
+### encode
+
+```javascript
+import { encode } from 'unib64'
+
+console.log(encode("a Ā 𐀀 文 🦄")) // YSDEgCDwkICAIOaWhyDwn6aE
+```
 
 ## <a name="references"></a> References
 

@@ -13,6 +13,12 @@ function bytesToBase64(bytes) {
     return btoa(binString);
 }
 
+const encode = (unicodeText) => {
+    return bytesToBase64(new TextEncoder().encode(unicodeText));
+}
+
 // Usage
-bytesToBase64(new TextEncoder().encode("a Ā 𐀀 文 🦄")); // "YSDEgCDwkICAIOaWhyDwn6aE"
+encode("a Ā 𐀀 文 🦄") // "YSDEgCDwkICAIOaWhyDwn6aE"
 new TextDecoder().decode(base64ToBytes("YSDEgCDwkICAIOaWhyDwn6aE")); // "a Ā 𐀀 文 🦄"
+
+export {encode}
