@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Converts Unicode to Base64 string and viceversa",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
