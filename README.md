@@ -28,6 +28,14 @@ import { decode } from 'unib64'
 console.log(decode("YSDEgCDwkICAIOaWhyDwn6aE")) // a Ā 𐀀 文 🦄
 ```
 
+## Tests
+
+Open a terminal at `app` and run the following command:
+
+```bash
+$ npm test
+```
+
 ## <a name="references"></a> References
 
 - [The "Unicode Problem"](https://developer.mozilla.org/en-US/docs/Glossary/Base64#the_unicode_problem)
