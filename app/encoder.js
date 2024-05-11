@@ -1,7 +1,7 @@
 // Copyright (c) Rafa Calvo
 // SPDX-License-Identifier: MIT
 
-function bytesToBase64(bytes) {
+const bytesToBase64 = (bytes) => {
     const binString = Array.from(bytes, (byte) =>
         String.fromCodePoint(byte),
     ).join("");
