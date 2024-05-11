@@ -28,5 +28,8 @@
   "homepage": "https://github.com/rafacalvo/unib64#readme",
   "devDependencies": {
     "mocha": "^10.4.0"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
   }
 }
