@@ -1,0 +1,28 @@
+{
+  "name": "unib64",
+  "version": "1.0.0",
+  "description": "Converts Unicode to Base64 string and viceversa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafacalvo/unib64.git"
+  },
+  "keywords": [
+    "unicode",
+    "base64",
+    "encode",
+    "decode",
+    "encoder",
+    "decoder",
+    "cli"
+  ],
+  "author": "Rafa Calvo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafacalvo/unib64/issues"
+  },
+  "homepage": "https://github.com/rafacalvo/unib64#readme"
+}
