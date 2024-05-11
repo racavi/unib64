@@ -4,6 +4,7 @@
   "description": "Converts Unicode to Base64 string and viceversa",
   "main": "index.js",
   "type": "module",
+  "bin": "bin/unib64.js",
   "scripts": {
     "test": "mocha"
   },
