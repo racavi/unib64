@@ -1,6 +1,6 @@
 # unib64
 
-This NodeJS package Converts Unicode text to Base64 string and viceversa.
+This NodeJS package Converts an Unicode string to a Base64 string and vice versa.
 
 The package is entirely based in The "Unicode Problem" solution as described into Mozilla Developers web (See [References](#references)).
 
@@ -18,13 +18,13 @@ You may want to use `unib64` to:
 If you only need this package's [ESM module](#as-esm-module) in your NodeJS app, then install it as dependency:
 
 ```bash
-npm install base64
+npm install unib64
 ```
 
 __Bonus__: If you expect to use the [CLI program](#as-cli-program) provided by this package, you will need to globally install this package within your system.
 
 ```bash
-npm install -g base64
+npm install -g unib64
 ```
 
 
@@ -71,7 +71,7 @@ console.log(decode("YSDEgCDwkICAIOaWhyDwn6aE")) // a Ā 𐀀 文 🦄
 
 ## Tests
 
-Open a terminal within into this repository root directory and run the following command:
+Open a terminal into this repository root directory and run the following command:
 
 ```bash
 npm test
